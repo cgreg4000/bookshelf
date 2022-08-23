@@ -9,10 +9,14 @@ const BookSchema = new mongoose.Schema({
         type: String,
         required: [true, "Book author is required."],
     },
+    bookPicture: {
+        type: String,
+        required: [true, "Book picture is required."],
+    },
     bookOverview: {
         type: String,
         required: [true, "Book overview is required."],
-        minlength: [20, "Book overview must be at least 20 characters long."]
+        minlength: [2, "Book overview must be at least 2 characters long."]
     }
 },
     { timestamps: true }

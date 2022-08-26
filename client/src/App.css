@@ -1,38 +1,130 @@
+* {
+  font-family: sans-serif;
+}
+
+label {
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-elements {
+  flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left {
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-container {
+  width: 70%;
+}
+
+.main-bg {
+  background-color: #3e5962;
+}
+
+.btn-main {
   color: white;
+  background-color: #3e5962;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-main:hover {
+  color: white;
+  background-color: #4a6770;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-main:focus {
+  color: white;
+  background-color: #4a6770;
+}
+
+.btn-second {
+  color: white;
+  background-color: #c0a02d;
+}
+
+.btn-second:hover {
+  color: white;
+  background-color: #cfb350;
+}
+
+.btn-second:focus {
+  color: white;
+  background-color: #cfb350;
+}
+
+img {
+  height: 400px;
+  width: 250px;
+}
+
+.img-large {
+  height: 600px;
+  width: 375px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+
+#wrapper {
+  max-width: 100%;
+  /* padding: 0px 45px 0px 45px; */
+  position: relative;
+}
+
+.module-section {
+  max-width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+ul {
+  width: 600em;
+  list-style-type: none;
+  padding: 25px 0 50px 0;
+}
+
+#content {
+  position: relative;
+}
+
+.card {
+  width: 237.5px;
+  height: 380px;
+  background: #fff;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transform: scale(1);
+  visibility: visible;
+  -moz-box-shadow: 0px 1px 5px 0px #676767;
+  -webkit-box-shadow: 0px 1px 5px 0px #676767;
+  box-shadow: 0px 1px 5px 0px #676767;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1);
+  visibility: visible;
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+  z-index: 100;
+  position: relative;
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  transition-duration: 400ms;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
 }

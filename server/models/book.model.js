@@ -9,6 +9,11 @@ const BookSchema = new mongoose.Schema({
         type: String,
         required: [true, "Book author is required."],
     },
+
+    bookYear:{
+        type: Number,
+        require: [true, "Book year is required."]
+    },
     bookPicture: {
         type: String,
         required: [true, "Book picture is required."],
@@ -16,7 +21,9 @@ const BookSchema = new mongoose.Schema({
     bookOverview: {
         type: String,
         required: [true, "Book overview is required."],
-        minlength: [2, "Book overview must be at least 2 characters long."]
+    },
+    bookPurchase: {
+        type: String
     }
 },
     { timestamps: true }
